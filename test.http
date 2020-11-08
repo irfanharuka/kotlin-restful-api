@@ -1,0 +1,23 @@
+POST http://localhost:8080/api/products
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": "A0001",
+    "name": "MBP 2020 15",
+    "price": 25000000,
+    "quantity": 1
+}
+
+###
+
+POST http://localhost:8080/api/products
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": "",
+    "name": "",
+    "price": 0,
+    "quantity": -1
+}
