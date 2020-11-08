@@ -1,0 +1,20 @@
+@startuml
+
+actor "User" as user
+node "Kotlin Restful API" {
+    component "Controller" as controller
+    component "Service" as service
+    component "Repository" as repository
+}
+
+database "PostgresSQL" as database
+
+user <--> controller
+controller <--> service
+service <--> repository
+repository <--> database
+
+@enduml
+
+'controller: Yang akan menerima request dari http (API)
+'service: Business logic
